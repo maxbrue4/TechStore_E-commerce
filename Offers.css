@@ -1,0 +1,337 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .ofertas {
+            margin-right: 4.5%;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .back-home {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .back-home:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .page-subtitle_dollar {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+
+        .offers-timer {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+        }
+
+        .timer-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .countdown-item {
+            text-align: center;
+        }
+
+        .countdown-number {
+            display: block;
+            font-size: 3rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #ff4757;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #999;
+        }
+
+        .product-image img {
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #999;
+        }
+
+
+        .offer-info {
+            padding: 1.5rem;
+        }
+
+        .offer-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .price-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .current-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .savings {
+            background: #27ae60;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .offer-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: linear-gradient(45deg, #5a67d8, #6c5ce7);
+        }
+
+        .flash-sale {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .flash-sale h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .flash-sale p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .flash-products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .flash-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .flash-item-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .flash-item-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .flash-item-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .flash-item-icon img {
+            width: 68px;
+            height: 68px;
+            margin-top: 5%;
+        }
+
+        .flash-item-name_tv {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            margin-top: -10%;
+        }
+
+        @media (max-width: 768px) {
+            .countdown {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            .offers-grid {
+                grid-template-columns: 1fr;
+            }
+        
+        .ofertas {
+            display: none;
+        }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .flash-item-price {
+                display: none;
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .offer-badge {
+            animation: pulse 2s infinite;
+        }

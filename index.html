@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ecommerce.ico" type="image/x-icon">
+    <title>TechStore - E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">TechStore</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <span>🔍</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#categorias">Categories</a></li>
+                <li><a href="#productos">Products</a></li>
+                <li><a href="Offers.html">Offers</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+            <div class="cart-icon" onclick="openCart()">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Best Technology</h1>
+            <p>Find the latest tech devices at the best prices</p>
+            <a href="#productos" class="cta-button">View Products</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2 class="section-title">Our Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Smartphones</h3>
+                    <p>The latest smartphones from all brands</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon category-icon_medition category-icon_televisions"><img src="cate-tv.png" alt="Categorie of Televisions"></div>
+                    <h3>Televisions</h3>
+                    <p>Next-generation 4K and 8K Smart TVs</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Computers</h3>
+                    <p>Laptops and desktop PCs for everyone</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon category-icon_medition"><img src="cate-tablet.png" alt="Categorie of Tablets"></div>
+                    <h3>Tablets</h3>
+                    <p>Tablets for work, study and entertainment</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon category-icon_medition category-icon_peripherals"><img src="cate-perife.png" alt="Categorie of Peripherals">
+                    </div>
+                    <h3>Peripherals</h3>
+                    <p>Keyboards, mouse, headphones and more</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Consoles and accessories for gamers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="iPhone 15 Pro Max.png" alt="Product iPhone 15 Pro Max">
+                        <div class="discount-badge">-20%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro Max</h3>
+                        <div class="product-price">
+                            $899.99
+                            <span class="product-original-price">$1,099.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(128 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="MacBook Air M3.png" alt="Product MacBook Air M3"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">MacBook Air M3</h3>
+                        <div class="product-price">$1,299.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(89 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Samsung QLED 4K 55.png" alt="Product Samsung QLED 4K 55">
+                        <div class="discount-badge">-15%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Samsung QLED 4K 55"</h3>
+                        <div class="product-price">
+                            $799.99
+                            <span class="product-original-price">$949.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(256 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="iPad Pro 12.9.png" alt="Product iPad Pro 12.9"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPad Pro 12.9"</h3>
+                        <div class="product-price">$1,099.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(342 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="PlayStation 5.png" alt="Product PlayStation 5"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">PlayStation 5</h3>
+                        <div class="product-price">$499.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(178 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Kit Gaming RGB.png" alt="Product Kit Gaming RGB">
+                        <div class="discount-badge">-25%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Kit Gaming RGB</h3>
+                        <div class="product-price">
+                            $149.99
+                            <span class="product-original-price">$199.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(67 reviews)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping on orders over $50</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Shopping</h3>
+                    <p>100% secure and protected transactions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Receive your products in 24-48 hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Customer service 24 hours a day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Your trusted store for the best technology on the market. Guaranteed quality and the best prices. Please note that we only accept US dollars.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Televisions</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Peripherals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Warranties</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📧 info@techstore.com</li>
+                        <li>📞 +54 9 223 123-4567</li>
+                        <li>📍 123 Tech Street, Digital City</li>
+                        <li>🕒 Monday to Friday: 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="space"><p>Puto el que lo lea.</p></section>
+
+    <nav class="buttons">
+        <button ><a href="#categorias" class="active">Categories</a></button>
+        <button ><a href="#productos" class="active">Product</a></button>
+        <button ><a href="Offers.html" class="active">Offers</a></button>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" onclick="closeCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>My Cart</h2>
+            <button class="close-cart" onclick="closeCart()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+                <p>Your cart is empty</p>
+                <p>Add some amazing products!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Payment</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
