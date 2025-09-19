@@ -153,11 +153,11 @@
                 
                 // Efecto visual
                 this.style.background = '#27ae60';
-                this.textContent = '✓ Agregado';
+                this.textContent = '✓ Added';
                 
                 setTimeout(() => {
                     this.style.background = '';
-                    this.textContent = 'Agregar al Carrito';
+                    this.textContent = 'Add to cart';
                 }, 1500);
             });
         });
